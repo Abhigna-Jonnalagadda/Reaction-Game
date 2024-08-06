@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reaction-Time-Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script type="text/javascript" src="index.js" defer></script>
+  </head>
+  <body>
+    <!--Game-->
+    <h1 class="game-name-heading">Reaction Time</h1>
+    <!--First Page-->
+    <section id="gameContainer" class="main-container" role="main">
+      <div>
+        <div class="order-row-wise" id="titleBar">
+          <h3 class="heading">Level:<span id="level">1</span></h3>
+          <h3>Score:<span class="score" id="score">0</span></h3>
+        </div>
+        <div class="grid-container" id="gridContainer"></div>
+      </div>
+      <div id="gameOverContainer" class="game-over-container">
+        <h3 class="game-over-heading hide" id="gameOver">Game Over</h3>
+        <div class="button-container">
+          <button id="start">Start</button>
+          <button id="viewLeaderBoard">View Leaderboard</button>
+        </div>
+      </div>
+    </section>
+
+    <!--LeaderBoard section-->
+    <section id="leaderBoardContainer" class="leaderboard-container hide">
+      <h3 id="leaderboardHeading">Leaderboard</h3>
+      <p id="zeroPlays" class="hide">
+        No plays yet... Waiting to see u on top of leaderboard..!
+      </p>
+      <table id="leaderboardTable"></table>
+      <div>
+        <button id="backToHomePageBtn">Go Back</button>
+        <button id="playBtn">Play</button>
+      </div>
+    </section>
+  </body>
+</html>
